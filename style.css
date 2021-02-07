@@ -1,0 +1,48 @@
+#notFound {
+  font-size: 30px;
+  color: red;
+  display: none;
+  text-align: center;
+}
+.topSection {
+  text-align: center;
+  padding: 20px;
+  margin: 25px;
+}
+.btn {
+  background-color: burlywood;
+  padding: 5px;
+  border: 1px solid greenyellow;
+  border-radius: 10px;
+}
+#fooditem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+#fooditem img {
+  border-radius: 25px;
+  height: 250px;
+  width: 350px;
+}
+#fooditem div {
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+#fooditem p {
+  font-size: 20px;
+}
+#foodinfo div {
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+#foodinfo div img {
+  border-radius: 25px;
+  height: 250px;
+  width: 350px;
+}
+#foodinfo div ul {
+  text-decoration: none;
+}

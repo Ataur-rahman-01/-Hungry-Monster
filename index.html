@@ -4,7 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Hungry-Monster</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="topSection">
+      <input id="foodinput" type="text" placeholder="Search for meal" />
+      <button class="btn" onclick="foodsearch ()" id="searchFood">
+        Search
+      </button>
+    </div>
+    <div id="foodinfo"></div>
+    <div id="fooditem"></div>
+    <p id="notFound">Food not found</p>
+
+    <script src="script.js"></script>
+  </body>
 </html>
