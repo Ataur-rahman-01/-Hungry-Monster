@@ -31,8 +31,8 @@ function getFooditem(keyword) {
 }
 // click section
 function getFooditeminfo(name) {
-  const foodid = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${name}`;
-  fetch(foodid)
+  const foodId = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${name}`;
+  fetch(foodId)
     .then((res) => res.json())
     .then((data) => renderinfo(data.meals[0]));
 }
@@ -40,13 +40,12 @@ const renderinfo = (info) => {
   const foodinfodiv = document.getElementById("foodinfo");
   foodinfodiv.innerHTML = ` <div>
   <img src = "${info.strMealThumb}">
-  <ul>
-  <li>${info.strIngredient1}</li>
-  <li>${info.strIngredient2}</li>
-  <li>${info.strIngredient3}</li>
-  <li>${info.strIngredient4}</li>
-
-  </ul>
+  <h2>${info.strMeal}</h2>
+  <h4>Ingredient:</h4>
+  <p>&#9989${info.strIngredient1}</p>
+  <p>&#9989;${info.strIngredient2}</p>
+  <p>&#9989;${info.strIngredient3}</p>
+  <p>&#9989;${info.strIngredient4}</p>
   </div>
   `;
   document.getElementById("fooditem").style.display = "none";

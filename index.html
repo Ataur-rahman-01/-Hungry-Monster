@@ -8,16 +8,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="topSection">
-      <input id="foodinput" type="text" placeholder="Search for meal" />
-      <button class="btn" onclick="foodsearch ()" id="searchFood">
-        Search
-      </button>
-    </div>
-    <div id="foodinfo"></div>
-    <div id="fooditem"></div>
-    <p id="notFound">Food not found</p>
+    <!-- nav bar -->
+    <nav>
+      <div class="topnav">
+        <a href="">About</a>
+        <a class="active" href="#news">Food</a>
+        <a href="">Contact</a>
+        <a href="">Home</a>
+      </div>
+    </nav>
+    <!-- main section -->
+    <main>
+      <div class="topSection">
+        <input id="foodinput" type="text" placeholder="Search for meal" />
+        <button class="btn" onclick="foodsearch ()" id="searchFood">
+          Search
+        </button>
+      </div>
+      <div id="foodinfo"></div>
+      <div id="fooditem"></div>
+      <p id="notFound">Plz Input the Food name</p>
+    </main>
+    <!-- footer -->
+    <footer>
+      <p>Author:Ataur rahman</p>
+      <p>&copy; Ataur</p>
+    </footer>
 
+    <!-- javascript -->
     <script src="script.js"></script>
   </body>
 </html>
