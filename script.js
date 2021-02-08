@@ -11,8 +11,16 @@ function foodsearch() {
 function getFooditem(keyword) {
   const searchinput = `https://www.themealdb.com/api/json/v1/1/search.php?s=${keyword}`;
   fetch(searchinput)
-    .then((res) => res.json())
-    .then((data) => displayFood(data));
+    .then(async (data) => {
+      if (data.ok) {
+        data = await data.json();
+        displayFood(data);
+      }
+    })
+    // unknown key error show
+    .catch((e) => {
+      alert("Fetch Error :worng word ", e);
+    });
   const displayFood = (food) => {
     const foodDiv = document.getElementById("fooditem");
     const meals = food.meals;
